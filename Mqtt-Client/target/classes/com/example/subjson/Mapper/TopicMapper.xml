@@ -1,0 +1,14 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- TopicMapper.xml -->
+<mapper namespace="com.example.subjson.Mapper.TopicMapper">
+    <insert id="createTable">
+        CREATE TABLE IF NOT EXISTS ${tableName} (
+            id INT PRIMARY KEY AUTO_INCREMENT,
+             name VARCHAR(50) NOT NULL,
+            age INT
+            )
+    </insert>
+</mapper>
